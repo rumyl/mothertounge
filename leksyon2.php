@@ -4,6 +4,46 @@
   require_once "includes/sidebar.php";
 
 ?>
+
+<style>
+        .crossword {
+            display: grid;
+            grid-template-columns: repeat(11, 40px);
+            grid-template-rows: repeat(12, 40px);
+        }
+
+        .cell {
+            width: 40px;
+            height: 40px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            position: relative;
+        }
+
+        .cell textarea {
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            resize: none;
+            font-family: inherit;
+            font-size: inherit;
+            text-align: center;
+        }
+
+        .cell.horizontal {
+            border-bottom: none;
+        }
+
+        .cell.vertical {
+            border-right: none;
+        }
+    </style>
+
   <main id="main" class="main">
 
     <div class="pagetitle">
@@ -236,7 +276,41 @@
                         h. sangkagarapon nga asin<br>
                         i. sangkabaso nga <b>juice</b><br>
                         j. tatlong ka kahil</p>
-                    <img src="assets/img/pangaean.png" class="card-img-bottom" alt="...">
+                        <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">Mga Pangngaean nga Mahuyap (Count Nouns)</th>
+                    <th scope="col">Mga Pangngaean nga Indi Mahuyap (Mass Nouns)</th>
+                  </tr>
+                </thead>
+                <form method="post" action="">
+                <tbody>
+                  <tr>
+                    <th scope="row"><input type="text" name="l2_u4_01" style="width:100%;" required placeholder="Imong sabat"></th>
+                    <td><input type="text" name="l2_u4_07" style="width:100%;" required placeholder="Imong sabat"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="text" name="l2_u4_02" style="width:100%;" required placeholder="Imong sabat"></th>
+                    <td><input type="text" name="l2_u4_08" style="width:100%;" required placeholder="Imong sabat"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="text" name="l2_u4_03" style="width:100%;" required placeholder="Imong sabat"></th>
+                    <td><input type="text" name="l2_u4_09" style="width:100%;" required placeholder="Imong sabat"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="text" name="l2_u4_04" style="width:100%;" required placeholder="Imong sabat"></th>
+                    <td><input type="text" name="l2_u4_10" style="width:100%;" required placeholder="Imong sabat"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="text" name="l2_u4_05" style="width:100%;" required placeholder="Imong sabat"></th>
+                    <td><input type="text" name="l2_u4_11" style="width:100%;" required placeholder="Imong sabat"></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><input type="text" name="l2_u4_06" style="width:100%;" required placeholder="Imong sabat"></th>
+                    <td><input type="text" name="l2_u4_12" style="width:100%;" required placeholder="Imong sabat"></td>
+                  </tr>
+                </tbody>
+              </table>
                   <footer class="text-center page">17</footer>
                 </div>
               </div>
@@ -247,11 +321,17 @@
                   <p class="card-title bold">Ueubrahon 5</p>
                   <p class="card-text">Magpili it limang ka grupo it mga bisaea (<b>phrase</b>) halin sa listahan nga makit-an sa ueubrahon 4. Isueat ro imong kaugalingon nga pamisaea gamit ro mga pangngaean</p>
                   <p class="card-text">
+                    <form method="post" action="">
                     1. <input type="text" name="l2_u5_01" style="width:90%;" required placeholder="Imong sabat"><br>
-                    2. <input type="text" name="l2_u5_01" style="width:90%;" required placeholder="Imong sabat"><br>
-                    3. <input type="text" name="l2_u5_01" style="width:90%;" required placeholder="Imong sabat"><br>
-                    4. <input type="text" name="l2_u5_01" style="width:90%;" required placeholder="Imong sabat"><br>
-                    5. <input type="text" name="l2_u5_01" style="width:90%;" required placeholder="Imong sabat"><br></p>
+                    2. <input type="text" name="l2_u5_02" style="width:90%;" required placeholder="Imong sabat"><br>
+                    3. <input type="text" name="l2_u5_03" style="width:90%;" required placeholder="Imong sabat"><br>
+                    4. <input type="text" name="l2_u5_04" style="width:90%;" required placeholder="Imong sabat"><br>
+                    5. <input type="text" name="l2_u5_05" style="width:90%;" required placeholder="Imong sabat"><br></p>
+                    <div style="text-align:right">
+                    <br>
+                      <input type="submit" name="submit" value="Submit Answers" style="background:#4154f1;color:white;border-radius:10px;">
+                    </div>
+                    </form>
                     <p class="card-title bold">Tun-ag Isugid!</p>
                     <p class="card-text">Basaha ro paragrapo halin sa istorya nga "Paibabaw, Paibabaw ag Paeayo" (Up, Up, and Away).</p>
                     <p class="card-text">&nbsp;&nbsp;&nbsp; Adlaw nga Sabado. Sanday Tatay ag Marlon hay nangin magkaibahan sa bilog sa adlaw. Nagtinikang sanda sa kaeanasan ag mabato nga daeanon hasta nga nakaabot sanda sa kahilamnan. Nalipay gid it duro si Marlon!</p>
@@ -279,34 +359,50 @@
                       </p>
                     </div>
                   </div>
+                  <form method="post" action="">
                   <div class="card-title bold">Ueubrahon 6</div>
                   <p class="card-text">Pili-a ro tama nga lugar (<b>setting</b>) para sa masunod nga mga istorya. Isueat ro letra it tama nga sabat sa inyo nga papel.</p>
-                  <p class="card-text">1. Pyesta<br>
-                    Siin ra pwedeng matabo? __________<br>
-                      a. sa baryo &nbsp; c. sa baybay <br>
+                  <p class="card-text"><b>1. Pyesta</b><br>
+                  <b>Siin ra pwedeng matabo? __________</b><br>
+                      a. sa baryo &nbsp;<br>
                       b. sa kantina<br>
-                    Hin-uno ra pwede nga matabo? __________<br>
-                      a. Tyempo it Paskwa &nbsp; c. bisan hin-uo <br>
+                      c. sa baybay <br>
+                      <input type="text" name="l2_u6_01" style="width:90%;" required placeholder="Imong sabat"><br>
+                  <b>Hin-uno ra pwede nga matabo? __________</b><br>
+                      a. Tyempo it Paskwa &nbsp;<br>
                       b. Pagbukas it klase<br>
+                      c. bisan hin-uo <br>
+                      <input type="text" name="l2_u6_02" style="width:90%;" required placeholder="Imong sabat"><br>
                   </p>
-                  <p class="card-text">2. Istorya hanungod sa mga Engkantada (<b>Fairy Tale</b>)<br>
-                    Siin ra pwedeng matabo? __________<br>
-                      a. eskuylahan &nbsp; c. zoo <br>
+                  <p class="card-text"><b>2. Istorya hanungod sa mga Engkantada (<i>Fairy Tale</i>)</b><br>
+                  <b> Siin ra pwedeng matabo? __________</b><br>
+                      a. eskuylahan &nbsp;<br>
                       b. palasyo<br>
-                    Hin-uno ra pwede nga matabo? __________<br>
-                      a. nakataliwan eon &nbsp; c. matabo paeang <br>
+                      c. zoo <br>
+                      <input type="text" name="l2_u6_03" style="width:90%;" required placeholder="Imong sabat"><br>
+                  <b>Hin-uno ra pwede nga matabo? __________</b><br>
+                      a. nakataliwan eon &nbsp;<br>
                       b. nagakatabo makaron<br>
+                      c. matabo paeang <br>
+                      <input type="text" name="l2_u6_04" style="width:90%;" required placeholder="Imong sabat"><br>
                   </p>
-                  <p class="card-text">3. Paindis-indis o Pakontes it Kanta sa Eskuylahan<br>
-                    Siin ra pwedeng matabo? __________<br>
+                  <p class="card-text"><b>3. Paindis-indis o Pakontes it Kanta sa Eskuylahan</b><br>
+                    <b>Siin ra pwedeng matabo? __________</b><br>
                       a. sa parti<br>
                       b. sa isaeang ka programa<br>
                       c. sa opisina<br>
-                    Hin-uno ra pwede nga matabo? __________<br>
+                      <input type="text" name="l2_u6_05" style="width:90%;" required placeholder="Imong sabat"><br>
+                    <b>Hin-uno ra pwede nga matabo? __________</b><br>
                       a. alas-12 it tungang-gabii<br>
                       b. truadlaw<br>
                       c. pagkatapos it klase 
+                      <input type="text" name="l2_u6_06" style="width:90%;" required placeholder="Imong sabat"><br>
                   </p>
+                    <div style="text-align:right">
+                      <br>
+                      <input type="submit" name="submit" value="Submit Answers" style="background:#4154f1;color:white;border-radius:10px;">
+                    </div>
+                    </form>
                   <footer class="text-center page">19</footer>
                 </div>
               </div>
@@ -320,7 +416,160 @@
                 <div class="card-body"><br>
                 <div class="card-title bold">Ueubrahon 7</div>
                   <p class="card-text">Sabtan ro mga kahon it tama nga pagbilinato (<b>spelling</b>) it mga bisaea halin sa istorya nga igadikta it maestro o maestra. Isueat ro sabat sa papel.</p>
-                  <img src="assets/img/crossword.png" class="card-img-bottom" alt="...">
+                  
+                <form method="post" action="">
+                <div class="crossword">
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal">m</div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border-bottom:solid;">b</div>
+                  <div class="cell"><textarea name="l2_u7_01" required></textarea></div>
+                  <div class="cell horizontal" style="border-bottom:solid;">y</div>
+                  <div class="cell"><textarea name="l2_u7_02" required></textarea></div>
+                  <div class="cell horizontal" style="border-bottom:solid;">w</div>
+                  <div class="cell" ><textarea name="l2_u7_03" required></textarea></div>
+                  <div class="cell horizontal" style="border-bottom:solid;">s</div>
+                  <div class="cell horizontal" style="border:none;"></div>
+                  <div class="cell horizontal" style="border:none;"></div>
+
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border-right:solid;">d</div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+
+
+                  <div class="cell vertical">t</div>
+                  <div class="cell vertical"> <textarea name="l2_u7_04" required></textarea></div>
+                  <div class="cell vertical">n</div>
+                  <div class="cell vertical"><textarea name="l2_u7_05" required></textarea></div>
+                  <div class="cell vertical">e</div>
+                  <div class="cell vertical"><textarea name="l2_u7_06" required></textarea></div>
+                  <div class="cell vertical">n</div>
+                  <div class="cell vertical"><textarea name="l2_u7_07" required></textarea></div>
+                  <div class="cell vertical" ><textarea name="l2_u7_08" required></textarea></div>
+                  <div class="cell vertical" style="border-right:solid;">n</div>
+                  <div class="cell vertical" style="border:none;"></div>
+
+
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border-right:solid;">g</div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+
+
+                  <div class="cell vertical">b</div>
+                  <div class="cell vertical" ><textarea name="l2_u7_09" required></textarea></div>
+                  <div class="cell vertical">e</div>
+                  <div class="cell vertical" ><textarea name="l2_u7_10" required></textarea></div>
+                  <div class="cell vertical">l</div>
+                  <div class="cell vertical" ><textarea name="l2_u7_11" required></textarea></div>
+                  <div class="cell vertical">g</div>
+                  <div class="cell vertical" ><textarea name="l2_u7_12" required></textarea></div>
+                  <div class="cell vertical" ><textarea name="l2_u7_13" required></textarea></div>
+                  <div class="cell vertical" ><textarea name="l2_u7_14" required></textarea></div>
+                  <div class="cell vertical" style="border-right:solid;">n</div>
+
+
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border-right:solid;" ><textarea name="l2_u7_15" required></textarea></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border-right:solid;">s</div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical">k</div>
+                  <div class="cell vertical" ><textarea name="l2_u7_16" required></textarea></div>
+                  <div class="cell vertical" >r</div>
+                  <div class="cell vertical" >s</div>
+                  <div class="cell vertical" ><textarea name="l2_u7_17" required></textarea></div>
+                  <div class="cell vertical" >d</div>
+                  <div class="cell vertical" style="border-right:solid;"><textarea name="l2_u7_18" required></textarea></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border-right:solid;"><textarea name="l2_u7_19" required></textarea></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border-right:solid;"><textarea name="l2_u7_20" required></textarea></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border-right:solid;">m</div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+                  <div class="cell vertical" style="border:none;"></div>
+              </div>
+                  <div style="text-align:right">
+                    <input type="submit" name="submit" value="Submit Answers" style="background:#4154f1;color:white;border-radius:10px;">
+                  </div>
+              </form>
                   <footer class="text-center page">20</footer>
                 </div>
               </div>
@@ -471,7 +720,18 @@
         </div>
       </div>
     </section>
-
+    <script>
+        function validateCrossword() {
+            const contenteditableCells = document.querySelectorAll('[contenteditable=true]');
+            for (let cell of contenteditableCells) {
+                if (!cell.textContent.trim()) {
+                    alert("All cells must be filled in.");
+                    return false;
+                }
+            }
+            return true;
+        }
+    </script>
   </main><!-- End #main -->
   <?php
   require_once "includes/footer.php";
