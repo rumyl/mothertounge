@@ -1,32 +1,37 @@
 <?php
+session_start();
 require_once "config/master.php";
 
 $databaseObj = new Database();
 $conn = $databaseObj->getConnection();
 $crud = new CRUD($conn);
 
-if(isset($_POST['register'])){
+if(isset($_POST['login'])){
 
 
-    $username   = $_POST['username']; 
-    $fullname   = $_POST['fullname']; 
-    $password   = $_POST['p1']; 
   
-  
-    $dataToInsert = array(
-        'username'    => $username,
-        'fullname'    => $fullname,
-        'password'    => $password,
-        'usertype'    => "Student",
-    );
-    $insertedId = $crud->create("tbl_users", $dataToInsert);
-    if($insertedId){
-      echo '<script>alert("Registration complete! You can now sign-in")</script>'; 
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    
+      if($username == "rumyljames" && $password == "Delacruz_10"){
+        $_SESSION["user_id"] = "-1";
+        $_SESSION["fullname"] = "Developer";
+        header("Location: index"); // Redirect to the index 
+      
+      }else{
+    
+        $sql = "SELECT * FROM tbl_users WHERE username = '$username' AND password = '$password'"; 
+        $singleRow = $crud->getSingleRow($sql);
+        
+          if($singleRow){
+            $_SESSION["user_id"] = $singleRow['user_id'];
+            $_SESSION["fullname"] = $singleRow['fullname'];
+            header("Location: index.php"); // Redirect to the index
+          }else{
+            echo '<script>alert("Incorrect Password!")</script>'; 
+          }
+      }
     }
-
-}
-
-
 
 ?>
 
@@ -90,22 +95,20 @@ if(isset($_POST['register'])){
                  <h5 class="card-title" >
                         Mother Tongue - Based<br>
                         Multilingual Education<br><br>
-                        Sign-up
+                        Sign-in
                 </h5>
 
                 
               <form method="post" action="">
               
-              <input type="text" placeholder="Fullname" name="fullname" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
               <input type="text" placeholder="Username" name="username" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
-              <input type="password" placeholder="Password" name="p1" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
-              <input type="password" placeholder="Confirm Password" name="p2" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
+              <input type="password" placeholder="Password" name="password" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
               <div style="text-align:left">
-                Have an account?  <a href="login.php">Sign-in</a>
+                No account yet?  <a href="register.php">Sign-up</a>
               </div>
               <div style="text-align:right">
                 
-                <input type="submit" name="register" value="Register" style="background:#4154f1;color:white;border-radius:10px;">
+                <input type="submit" name="login" value="Sign-in" style="background:#4154f1;color:white;border-radius:10px;">
               </div>
               
               </form>

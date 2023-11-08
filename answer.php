@@ -1,15 +1,15 @@
 <?php
+session_start();
 require_once "config/master.php";
 
 $databaseObj = new Database();
 $conn = $databaseObj->getConnection();
 $crud = new CRUD($conn);
 
-
 // submit leksyon 1 Ueobrahon 3
 if(isset($_POST['submit_l1_u3'])){
 
-    $student_id = 0;
+    $student_id = $_SESSION["user_id"];
     $ans_question = "l1_u3";
     $score = 0;
 

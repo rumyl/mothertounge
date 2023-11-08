@@ -5,4 +5,5 @@ $databaseConfig = array(
     'password' => 'Delacruz_10',
     'database' => 'm_db'
 );
+
 ?>
