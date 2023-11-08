@@ -13,10 +13,10 @@ if(isset($_POST['login'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
     
-      if($username == "rumyljames" && $password == "Delacruz_10"){
+      if($username == "admin" && $password == "admin"){
         $_SESSION["user_id"] = "-1";
-        $_SESSION["fullname"] = "Developer";
-        header("Location: index"); // Redirect to the index 
+        $_SESSION["fullname"] = "Administrator";
+        header("Location: admin.php"); // Redirect to the index 
       
       }else{
     

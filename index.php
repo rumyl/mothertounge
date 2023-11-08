@@ -2,10 +2,8 @@
   require_once "includes/metaheader.php";
   require_once "includes/header.php";
   require_once "includes/sidebar.php";
-
 ?>
   <main id="main" class="main">
-
     <div class="pagetitle">
       <h1>Home</h1>
       <nav>
@@ -14,7 +12,7 @@
           <li class="breadcrumb-item active">Home</li>
         </ol>
       </nav>
-    </div><!-- End Page Title -->
+    </div>
 
     <section class="section dashboard">
       <div class="row">

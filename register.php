@@ -23,13 +23,9 @@ if(isset($_POST['register'])){
     if($insertedId){
       echo '<script>alert("Registration complete! You can now sign-in")</script>'; 
     }
-
 }
 
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">

@@ -10,7 +10,7 @@ $crud = new CRUD($conn);
 if(isset($_POST['submit_l1_u3'])){
 
     $student_id = $_SESSION["user_id"];
-    $ans_question = "l1_u3";
+    $ans_question = "Leksyon 1 - Ueobarahon 3";
     $score = 0;
 
     $l1_u3_01   = $_POST['l1_u3_01']; 
@@ -75,7 +75,7 @@ if(isset($_POST['submit_l1_u3'])){
 if(isset($_POST['submit_l2_u1'])){
 
     $student_id = $_SESSION["user_id"];
-    $ans_question = "l2_u1";
+    $ans_question = "Leksyon 2 - Ueobarahon 1";
     $score = 0;
 
     $l2_u1_01   = $_POST['l2_u1_01']; 
