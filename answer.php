@@ -71,6 +71,39 @@ if(isset($_POST['submit_l1_u3'])){
 }
 
 
+// submit leksyon 1 Ueobrahon 3
+if(isset($_POST['submit_l2_u1'])){
+
+    $student_id = $_SESSION["user_id"];
+    $ans_question = "l2_u1";
+    $score = 0;
+
+    $l2_u1_01   = $_POST['l2_u1_01']; 
+    $l2_u1_02   = $_POST['l2_u1_02']; 
+    $l2_u1_03   = $_POST['l2_u1_03']; 
+    $l2_u1_04   = $_POST['l2_u1_04']; 
+    $l2_u1_05   = $_POST['l2_u1_05']; 
+    $l2_u1_06   = $_POST['l2_u1_06']; 
+
+    $answer = "";
+    $answer .= $l2_u1_01.", ".$l2_u1_02.", ".$l2_u1_03.", ".$l2_u1_04.", ".$l2_u1_05.", ".$l2_u1_06;
+
+
+
+    $dataToInsert = array(
+        'ans_answer'    => $answer,
+        'ans_question'  => $ans_question,
+        'ans_score'     => 0,
+        'student_id'    => $student_id,
+    );
+    $insertedId = $crud->create("tbl_answers", $dataToInsert);
+    if($insertedId){
+
+        echo "<meta http-equiv='refresh' content='0;url=leksyon2.php'>";
+    }
+
+}
+
 
 
 
