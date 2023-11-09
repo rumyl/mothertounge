@@ -1,9 +1,32 @@
 <?php
-  require_once "includes/metaheader.php";
+  require_once "includes/metaheader2.php";
   require_once "includes/header.php";
-  require_once "includes/sidebar.php";
+  require_once "includes/sidebar2.php";
   require_once "config/master.php";
 
+if(isset($_GET['action'])) {
+  $action     = $_GET['action'];
+  $student_id = $_GET['student_id'];
+
+  if($action == "remove"){
+
+
+    $condition = array(
+      'user_id'    => $student_id
+    );
+
+    $condition2 = array(
+      'student_id'    => $student_id
+    );
+    $removeUser = $crud->delete('tbl_users', $condition);
+    $removeAnswers = $crud->delete('tbl_answers', $condition2);
+    
+    if($removeUser){
+      echo '<script>alert("Student had been removed to class!")</script>'; 
+
+    }
+  }
+}
 ?>
   <main id="main" class="main">
 
@@ -53,7 +76,8 @@
                                 <tr>
                                     <td style="text-align:left;"><?php echo $record['fullname'] ?></td>
                                     <td style="text-align:center;">
-                                        <a href="score.php?user_id=<?php echo $user_id; ?>"><button class="btn-view" style="background:#4154f1;color:white;border-radius:10px;">View Score</button></a>
+                                        <a href="score.php?user_id=<?php echo $user_id; ?>"><button style="background:#4154f1;color:white;border-radius:10px;">View Score</button></a>
+                                        <a href="admin.php?student_id=<?php echo $user_id; ?>&action=remove" onclick="return confirm('Are you sure you want to remove this student on this class?');"><button style="background:red;color:white;border-radius:10px;">Remove</button></a>
                                     </td>
                                     </tr>
                             <?php 
