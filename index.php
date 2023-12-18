@@ -37,9 +37,9 @@
             <div class="card-body">
               <div class="card-title text-center">Table of Contents</div>
               <p class="card-text">Yunit 1: Pagkilaea sa Akong Kaugalingon ag Pamilya</p>
-              <p class="card-text"><b>pg2___</b>Leksyon 1: Ako ag Ro akong Pamilya</p>
-              <p class="card-text"><b>pg11___</b>Leksyon 2: Ako ag ro Akong Pamilya: Healthy Habit</p>
-              <p class="card-text"><b>pg25___</b>Leksyon 3: Mga Butang nga Akong Nasadyahan ag Mga Tawong Akong Nailaan</p>
+              <p class="card-text"> <a href="page1.php"><b>Pahina 1</b></a> - Leksyon 1: Ako ag Ro akong Pamilya</p>
+              <p class="card-text"> <a href="page7.php"><b>Pahina 7</b></a> - Leksyon 2: Ako ag ro Akong Pamilya: Healthy Habit</p>
+              <p class="card-text"> <a href="page22.php"><b>Pahina 22</b></a> - Leksyon 3: Mga Butang nga Akong Nasadyahan ag Mga Tawong Akong Nailaan</p>
             </div>
           </div>
         </div>

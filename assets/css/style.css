@@ -84,6 +84,19 @@ h6 {
   transition: all 0.4s;
 }
 
+.navigation-buttons {
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+
 .back-to-top i {
   font-size: 24px;
   color: #fff;
