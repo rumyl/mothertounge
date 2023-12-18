@@ -34,7 +34,7 @@
                     5. <input type="text" name="l2_u5_05" style="width:90%;" required placeholder="Imong sabat"><br></p>
                     <div style="text-align:right">
                     <br>
-                      <input type="submit" name="submit" value="Submit Answers" style="background:#4154f1;color:white;border-radius:10px;">
+                      <input type="submit" name="submit" value="Ipasa ing sabat" style="background:#4154f1;color:white;border-radius:10px;">
                     </div>
                     </form>
                     <p class="card-title bold">Tun-ag Isugid!</p>

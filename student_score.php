@@ -5,10 +5,10 @@
   require_once "config/master.php";
 
 
-  $user_id = $_GET['user_id'];
-  $get = "SELECT * FROM tbl_users WHERE user_id = '$user_id'";
+  //$user_id = $_GET['user_id'];
+  //$get = "SELECT * FROM tbl_users WHERE user_id = '$user_id'";
 
-  $name = $crud->getSingleRow($get);
+  //$name = $crud->getSingleRow($get);
 
 
 ?>

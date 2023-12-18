@@ -216,7 +216,7 @@
                   <div class="cell vertical" style="border:none;"></div>
               </div>
                   <div style="text-align:right">
-                    <input type="submit" name="submit" value="Submit Answers" style="background:#4154f1;color:white;border-radius:10px;">
+                    <input type="submit" name="submit" value="Ipasa ing sabat" style="background:#4154f1;color:white;border-radius:10px;">
                   </div>
               </form>
                   <footer class="text-center page">16</footer>

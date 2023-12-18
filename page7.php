@@ -49,7 +49,7 @@
                   <p class="card-text"><input type="text" name="l2_u1_05" style="width:100%;" required placeholder="Imong sabat"></p>
                   <p class="card-text"><input type="text" name="l2_u1_06" style="width:100%;" required placeholder="Imong sabat"></p>
                   <div style="text-align:right">
-                    <input type="submit" name="submit_l2_u1" value="Submit Answers" style="background:#4154f1;color:white;border-radius:10px;">
+                    <input type="submit" name="submit_l2_u1" value="Ipasa ing sabat" style="background:#4154f1;color:white;border-radius:10px;">
                   </div>
                   </form>
                   <footer class="text-center page">7</footer>
