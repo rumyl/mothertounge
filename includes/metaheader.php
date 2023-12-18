@@ -4,7 +4,17 @@ session_start();
 if (!isset($_SESSION["user_id"]) || empty($_SESSION["user_id"])) {
     header("Location: login.php");
     exit();
+}else{
+
+  $currentPage = basename($_SERVER['PHP_SELF']);
+  if ($currentPage !== 'login.php') {
+      $_SESSION["last_visited_page"] = $currentPage;
+  } else {
+      $_SESSION["last_visited_page"] = "index.php"; 
+  }
 }
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

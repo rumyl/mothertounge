@@ -8,8 +8,9 @@ $crud = new CRUD($conn);
 
 // Check if the user is already logged in via session or persistent login cookie
 if (isset($_SESSION["user_id"])) {
-    // Redirect to the default page for logged-in users
-    header("Location: index.php");
+    // Redirect to the last visited page or default page for logged-in users
+    $lastVisitedPage = isset($_SESSION["last_visited_page"]) ? $_SESSION["last_visited_page"] : "index.php";
+    header("Location: $lastVisitedPage");
     exit();
 }
 
@@ -25,8 +26,9 @@ if (isset($_COOKIE["remember_me"])) {
         $_SESSION["user_id"] = $singleRow['user_id'];
         $_SESSION["fullname"] = $singleRow['fullname'];
 
-        // Redirect to the default page for regular users
-        header("Location: index.php");
+        // Redirect to the last visited page or default page for regular users
+        $lastVisitedPage = isset($_SESSION["last_visited_page"]) ? $_SESSION["last_visited_page"] : "index.php";
+        header("Location: $lastVisitedPage");
         exit();
     }
 }
@@ -43,8 +45,9 @@ if (isset($_POST['login'])) {
         // Set a persistent login cookie (you may want to improve this)
         setcookie("remember_me", "-1|admin", time() + (86400 * 30), "/"); // 30 days
 
-        // Redirect to the default page for the administrator
-        header("Location: admin.php");
+        // Redirect to the last visited page or default page for the administrator
+        $lastVisitedPage = isset($_SESSION["last_visited_page"]) ? $_SESSION["last_visited_page"] : "admin.php";
+        header("Location: $lastVisitedPage");
         exit();
     } else {
         $sql = "SELECT * FROM tbl_users WHERE username = '$username' AND password = '$password'";
@@ -57,8 +60,9 @@ if (isset($_POST['login'])) {
             // Set a persistent login cookie (you may want to improve this)
             setcookie("remember_me", $singleRow['user_id'] . "|" . $username, time() + (86400 * 30), "/"); // 30 days
 
-            // Redirect to the default page for regular users
-            header("Location: index.php");
+            // Redirect to the last visited page or default page for regular users
+            $lastVisitedPage = isset($_SESSION["last_visited_page"]) ? $_SESSION["last_visited_page"] : "index.php";
+            header("Location: $lastVisitedPage");
             exit();
         } else {
             echo '<script>alert("Incorrect Password!")</script>';
