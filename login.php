@@ -6,35 +6,66 @@ $databaseObj = new Database();
 $conn = $databaseObj->getConnection();
 $crud = new CRUD($conn);
 
-if(isset($_POST['login'])){
+// Check if the user is already logged in via session or persistent login cookie
+if (isset($_SESSION["user_id"])) {
+    // Redirect to the default page for logged-in users
+    header("Location: index.php");
+    exit();
+}
 
+// Check if the persistent login cookie exists
+if (isset($_COOKIE["remember_me"])) {
+    list($user_id, $username) = explode("|", $_COOKIE["remember_me"]);
 
-  
+    // Validate the user credentials (you may want to improve this)
+    $sql = "SELECT * FROM tbl_users WHERE user_id = '$user_id' AND username = '$username'";
+    $singleRow = $crud->getSingleRow($sql);
+
+    if ($singleRow) {
+        $_SESSION["user_id"] = $singleRow['user_id'];
+        $_SESSION["fullname"] = $singleRow['fullname'];
+
+        // Redirect to the default page for regular users
+        header("Location: index.php");
+        exit();
+    }
+}
+
+// Process login if the login form is submitted
+if (isset($_POST['login'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
-    
-      if($username == "admin" && $password == "admin"){
+
+    if ($username == "admin" && $password == "admin") {
         $_SESSION["user_id"] = "-1";
         $_SESSION["fullname"] = "Administrator";
-        header("Location: admin.php"); // Redirect to the index 
-      
-      }else{
-    
-        $sql = "SELECT * FROM tbl_users WHERE username = '$username' AND password = '$password'"; 
+
+        // Set a persistent login cookie (you may want to improve this)
+        setcookie("remember_me", "-1|admin", time() + (86400 * 30), "/"); // 30 days
+
+        // Redirect to the default page for the administrator
+        header("Location: admin.php");
+        exit();
+    } else {
+        $sql = "SELECT * FROM tbl_users WHERE username = '$username' AND password = '$password'";
         $singleRow = $crud->getSingleRow($sql);
-        
-          if($singleRow){
+
+        if ($singleRow) {
             $_SESSION["user_id"] = $singleRow['user_id'];
             $_SESSION["fullname"] = $singleRow['fullname'];
-            header("Location: index.php"); // Redirect to the index
-          }else{
-            echo '<script>alert("Incorrect Password!")</script>'; 
-          }
-      }
+
+            // Set a persistent login cookie (you may want to improve this)
+            setcookie("remember_me", $singleRow['user_id'] . "|" . $username, time() + (86400 * 30), "/"); // 30 days
+
+            // Redirect to the default page for regular users
+            header("Location: index.php");
+            exit();
+        } else {
+            echo '<script>alert("Incorrect Password!")</script>';
+        }
     }
-
+}
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -64,16 +95,8 @@ if(isset($_POST['login'])){
   <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
