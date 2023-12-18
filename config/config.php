@@ -6,4 +6,5 @@ $databaseConfig = array(
     'database' => 'm_db'
 );
 
+date_default_timezone_set('Asia/Manila');
 ?>

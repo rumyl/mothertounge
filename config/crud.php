@@ -129,7 +129,6 @@ class CRUD
     }
 
 
-
     public function isValueUnique($table, $column, $value)
     {
         $escapedValue = $this->conn->real_escape_string($value);
@@ -171,7 +170,27 @@ class CRUD
     }
     
     
+
+    public function calculateAge($birthdate) {
+        $birthdate = new DateTime($birthdate);
+        $currentDate = new DateTime();
+        $age = $currentDate->diff($birthdate);
+        $years = $age->y; 
+        $months = $age->m; 
+        return "$years years and $months months";
+    }
+
+
+    public function dateToWords($date) {
+        // Convert the date to a timestamp
+        $timestamp = strtotime($date);
+        
+        // Format the date using strftime
+        $formattedDate = strftime('%B %d, %Y', $timestamp);
     
+        return $formattedDate;
+    }
+
 
 }
 
