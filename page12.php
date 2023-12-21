@@ -33,11 +33,11 @@
                   <p class="card-text">&nbsp; &nbsp; &nbsp;Duga, duga, duro nga duga. Melon nga maduga. (<b>Yes, yes,yo!</b>)</p>
                   <p class="card-text">&nbsp; &nbsp; &nbsp; Ro iba nga mga unga hay nag-intra man sa pag-<b>rap</b> nga ginahambae ro pangaean ku tanan nga mga prutas nga andang nakit-an sa baealigyaan. Owa gid kanda it nakapan-o nga nag andar eon it uman ro saeakyan sa paghatod kanda pauli.</p>
                 </div>
-                <footer class="text-center page">12</footer><br>
+                <footer class="text-center page">Pahina 12</footer><br>
               </div>
               <div class="navigation-buttons">
-                                <a href="page11.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page13.php"><button class="btn btn-primary float-right">Next</button></a>
+                                <a href="page11.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page13.php"><button class="btn btn-primary float-right">Masunod</button></a>
                 </div><!-- End navigation-buttons -->
             </div>
           </div>

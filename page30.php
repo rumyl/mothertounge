@@ -22,27 +22,59 @@
           <div class="card">
             <div class="card-body">
               <br>
-              <h5 class="card-text bold">Tandaan!</h5>
+              <h5 class="card-text bold">Ueubrahon 8</h5>
+              <p>Gamita ro tama nga panghuya <b>(counter)</b> para sa mga masunod nga mga pangngaean nga indi mahuyap <b>(mass nouns)</b>. Pili-a ro inyong sabat sa sueod it kahon.
               <div class="card-body card-style1">
               <br>
-              <p class="sm">Ro mga hitabo sa istorya hay may ginasundan nga hustong pagpasunod. Sa pagpasunod it mga hitabo sa istorya usuyon ro mga bisaea nga nagatao it sinyal kapareho it una, masunod, sa katapusan, bago ag pagkatapos, agud makabulig kimo ga makit-an ro hustoo nga pagpasunod. Ro iba pa nga mga paeatandaan sa teksto hay sarang man magamit depende sa imong nasayran ag pag-eobot agud makit-an ro husto nga pagpasunod.</p>
+              <p class="sm">sangka balde&nbsp;&nbsp;sangka kahon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sangka pinggan</p>
+              <p class="sm">sangka bote&nbsp;&nbsp;&nbsp;&nbsp;sangka garapon&nbsp;&nbsp; sangka tasa</p>
+              <p class="sm">sangtueo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sangka basket&nbsp;&nbsp;&nbsp;sangka maeokong</p>
+              <p class="sm">sangka bag&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sangkahakup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sangka baso</p>
               </div>
-              <h5 class="card-title text-center">Obrahon Naton Raya!</h5>
-              <h5 class="card-text bold">Ueubrahon 7</h5>
-              <p>Basaha ro kada bisaea ag isueat ro husto nga sabat sa sueod it tsart.</p>
               <br>
-              <p class="smb"><b>Bisaea (Words)</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>Root word</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>suffix</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>Kahueugan (Meaning)</b></p>
-              <img width="100%;" class="bayluhi" src="assets/img/bayluhi.png" alt="...">
-              <img width="100%;" class="bisaea" src="assets/img/buhusan.png" alt="...">
-              <img width="100%;" class="bisaea" src="assets/img/kangayon.png" alt="...">
-              <img width="100%;" class="bisaea" src="assets/img/tindahan.png" alt="...">
-              <footer class="text-center number">30</footer>
+
+              <div class="column">
+                <br>
+                <img src="assets/img/soup1.png" alt="..." style="width:100%">
+                <p>__________ nga sabaw</p>
+              </div>
+
+               <div class="column">
+                <br>
+                <img src="assets/img/rock1.png" alt="..." style="width:100%">
+                <p>__________ nga baeas</p>
+              </div>
+
+               <div class="column">
+                <br>
+                <img src="assets/img/juice1.png" alt="..." style="width:100%">
+                <p>__________ nga juice</p>
+              </div>
+
+               <div class="column">
+                <br>
+                <img src="assets/img/medicine1.png" alt="..." style="width:100%">
+                <p>__________ nga bueong</p>
+              </div>
+
+               <div class="column">
+                <br>
+                <img src="assets/img/jam1.png" alt="..." style="width:100%">
+                <p>__________ nga palaman</p>
+              </div>
+
+               <div class="column">
+                <br>
+                <img src="assets/img/rice1.png" alt="..." style="width:100%">
+                <p>__________ nga humay</p>
+              </div>
             </div>
-            <div class="navigation-buttons">
-                                <a href="page29.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page31.php"><button class="btn btn-primary float-right">Next</button></a>
-            </div><!-- End navigation-buttons -->
+            <footer class="text-center number">Pahina 30</footer><br>
           </div>
+          <div class="navigation-buttons">
+                                <a href="page29.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page31.php"><button class="btn btn-primary float-right">Masunod</button></a>
+            </div><!-- End navigation-buttons -->
         </div>
     </section>
 

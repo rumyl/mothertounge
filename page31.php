@@ -22,59 +22,20 @@
           <div class="card">
             <div class="card-body">
               <br>
-              <h5 class="card-text bold">Ueubrahon 8</h5>
-              <p>Gamita ro tama nga panghuya <b>(counter)</b> para sa mga masunod nga mga pangngaean nga indi mahuyap <b>(mass nouns)</b>. Pili-a ro inyong sabat sa sueod it kahon.
-              <div class="card-body card-style1">
+              <h5 class="card-text bold">Ueubrahon 9</h5>
+              <p>Pasunura ro mga pamaagi sa pagbuoe it eksamin. Isueat ro numero sa linya.</p>
+              <p class="card-text">__________Basaha ag eobton it mayad ro mga direksyon.<br>__________Isueat ro impurmasyon nga kinahangean pareho it imong pangaean, grado ag seksyon<br>__________Sayura ro nakataeana nga oras para sa eksanim.<br>__________Baliki it uman ro mga pangutana ag sabat.<br>__________Basaha it mayad ro kada aytem bago isueat ro sabat.</p>
+              <h5 class="card-text bold">Assessment</h5>
+              <p><b>A</b>.&nbsp; Isipa nga nagapanaw ka sa <b>camping trip</b> sa sueod it limang adlaw. Maglista it 20 ka tawo, lugar ag mga butang nga gusto mo nga makita o daehon sa lugar.</p>
               <br>
-              <p class="sm">sangka balde&nbsp;&nbsp;sangka kahon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sangka pinggan</p>
-              <p class="sm">sangka bote&nbsp;&nbsp;&nbsp;&nbsp;sangka garapon&nbsp;&nbsp; sangka tasa</p>
-              <p class="sm">sangtueo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sangka basket&nbsp;&nbsp;&nbsp;sangka maeokong</p>
-              <p class="sm">sangka bag&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sangkahakup&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;sangka baso</p>
-              </div>
-              <br>
-
-              <div class="column">
-                <br>
-                <img src="assets/img/soup1.png" alt="..." style="width:100%">
-                <p>__________ nga sabaw</p>
-              </div>
-
-               <div class="column">
-                <br>
-                <img src="assets/img/rock1.png" alt="..." style="width:100%">
-                <p>__________ nga baeas</p>
-              </div>
-
-               <div class="column">
-                <br>
-                <img src="assets/img/juice1.png" alt="..." style="width:100%">
-                <p>__________ nga juice</p>
-              </div>
-
-               <div class="column">
-                <br>
-                <img src="assets/img/medicine1.png" alt="..." style="width:100%">
-                <p>__________ nga bueong</p>
-              </div>
-
-               <div class="column">
-                <br>
-                <img src="assets/img/jam1.png" alt="..." style="width:100%">
-                <p>__________ nga palaman</p>
-              </div>
-
-               <div class="column">
-                <br>
-                <img src="assets/img/rice1.png" alt="..." style="width:100%">
-                <p>__________ nga humay</p>
-              </div>
+              <img src="assets/img/camp1.png" alt="..." style="width:100%">
+              <footer class="text-center number">Pahina 31</footer>
             </div>
-            <footer class="text-center number">31</footer><br>
-          </div>
-          <div class="navigation-buttons">
-                                <a href="page30.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page32.php"><button class="btn btn-primary float-right">Next</button></a>
+            <div class="navigation-buttons">
+                                <a href="page30.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="student_score.php"><button class="btn btn-primary float-right">Masunod</button></a>
             </div><!-- End navigation-buttons -->
+          </div>
         </div>
     </section>
 

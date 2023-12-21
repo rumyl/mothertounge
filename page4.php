@@ -47,12 +47,12 @@
                     Ro mga hitabo <b>(Plot)</b> nagasugid hanungod sa mga problema nga ginapangatubang it mga tawo sa istorya ag ro solusyon sa andang problema.</p>
                     </div>
                     <br>
-                    <footer class="text-center number">4</footer>
+                    <footer class="text-center number">Pahina 4</footer>
 
                 </div>
                 <div class="navigation-buttons">
-                            <a href="page3.php"><button class="btn btn-primary float-left">Previous</button></a>
-                            <a href="page5.php"><button class="btn btn-primary float-right">Next</button></a>
+                            <a href="page3.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                            <a href="page5.php"><button class="btn btn-primary float-right">Masunod</button></a>
                 </div><!-- End navigation-buttons -->
                 </div>
             </div>

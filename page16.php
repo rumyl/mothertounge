@@ -219,11 +219,11 @@
                     <input type="submit" name="submit" value="Ipasa ing sabat" style="background:#4154f1;color:white;border-radius:10px;">
                   </div>
               </form>
-                  <footer class="text-center page">16</footer>
+                  <footer class="text-center page">Pahina 16</footer>
                 </div>
                 <div class="navigation-buttons">
-                                <a href="page15.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page17.php"><button class="btn btn-primary float-right">Next</button></a>
+                                <a href="page15.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page17.php"><button class="btn btn-primary float-right">Masunod</button></a>
                 </div><!-- End navigation-buttons -->
               </div>
             </div>

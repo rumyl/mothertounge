@@ -22,19 +22,51 @@
           <div class="card">
             <div class="card-body">
               <br>
-                <p class="card-text bold">Ueubrahon 3</p>
-                <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaadto si nanay sa tindahan agud magbakae it mga butang nga kinahangean nana para sa anang ginaeaha.</p>
-                <p class="card-text">Butangan it tsek <b>✓</b> ro mga butang nga imong bue-on nga husto ro sukat ag ⭐ para sa mga butang nga imong bakeon gamit ro eain-eain panghuyap.</p>
-                <p class="card-text">Halimbawa: __________pinulbos nga paminta <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__________mga dahon it klabo</p>
-                <img src="assets/img/cloud.png" class="card-img-bottom" alt="...">
-                <p class="card-text bold">Ueubrahon 4</p>
-                <p class="card-text">Istudyuha ro imong mga sabat para sa Ueubrahon 4.
-                Kilaeaha ro mga pangngaean nga mahuyap ag ro mga pangngaean nga indi mahuyao suno sa mga sabat nga imong ginsueat.</p>
-              <footer class="text-center number">26</footer>
+                <center>
+                <p class="card-text smm">Mga Pangngaean nga Mahuyap&nbsp;&nbsp;&nbsp;&nbsp;Mga Pangngaean nga indi Mahuyap</p>
+                <br> 
+                <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Count Nouns&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mass Nouns</b></p>
+
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..."style="width:80%">
+                </div>
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..." style="width:80%">
+                </div>
+
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..."style="width:80%">
+                </div>
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..." style="width:80%">
+                </div>
+
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..."style="width:80%">
+                </div>
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..." style="width:80%">
+                </div>
+                
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..."style="width:80%">
+                </div>
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..." style="width:80%">
+                </div>
+
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..."style="width:80%">
+                </div>
+                <div class="column">
+                <img src="assets/img/cloud1.png" alt="..." style="width:80%">
+                </div>
+
+                <footer class="text-center number">Pahina 26</footer>
             </div>
             <div class="navigation-buttons">
-                                <a href="page25.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page27.php"><button class="btn btn-primary float-right">Next</button></a>
+                                <a href="page25.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page27.php"><button class="btn btn-primary float-right">Masunod</button></a>
             </div><!-- End navigation-buttons -->
           </div>
         </div>

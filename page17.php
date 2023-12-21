@@ -29,11 +29,11 @@
                     Paalin na ginsolbar ro anang problema?<br>
                     Ano tawgon ro parte it istorya nga nagasugid sa problema it tawuhan ag kon paalin na ra ginsolbar?
                   </p>
-                  <footer class="text-center page">17</footer>
+                  <footer class="text-center page">Pahina 17</footer>
                 </div>
                 <div class="navigation-buttons">
-                                <a href="page16.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page18.php"><button class="btn btn-primary float-right">Next</button></a>
+                                <a href="page16.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page18.php"><button class="btn btn-primary float-right">Masunod</button></a>
                 </div><!-- End navigation-buttons -->
               </div>
         </div>

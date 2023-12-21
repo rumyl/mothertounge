@@ -35,11 +35,11 @@
                     <p class="card-text">Kon ikaw ro sambilog sa unga nga naga istorya, ano pa ro ibang impurmasyon nga imong itao?</p>
                     <p class="card-text">Magbuoe it kapareha ag kilaeahon ro kada isaea paagi sa pagsugid it kaparehong mga impurmasyon.</p>
                     <br>
-                        <footer class="text-center number">2</footer>
+                        <footer class="text-center number">Pahina 2</footer>
                 </div>
                     <div class="navigation-buttons">
-                        <a href="page1.php"><button class="btn btn-primary float-left">Previous</button></a>
-                        <a href="page3.php"><button class="btn btn-primary float-right">Next</button></a>
+                        <a href="page1.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                        <a href="page3.php"><button class="btn btn-primary float-right">Masunod</button></a>
                     </div><!-- End navigation-buttons -->
                 </div>
             </div>

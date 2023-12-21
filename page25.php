@@ -21,32 +21,20 @@
       <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title text-center">Tun-an ag Isugid</h5>
-              <h5 class="card-text bold">Ueubrahon 2</h5>
-              <p class="card-text">Basaha ro mga pamisaea halin sa baeasahon.</p>
-              <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>A.</b>Nag-umpsa si nanay sa paglimyo ku &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mga pinggan, kaeaha ag kaldero.</p>
-              <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>B.</b>Nagbutang si Louie it sangkabaso nga &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gatas sa lamesa.</p>
-            
-              <p class="card-text">Alin ro mga panggngaean nga mahuyap <b>(Count Nouns)</b> ag indi mahuyap <b>(Mass Nouns)</b> sa kada pamisaea?</p>
-              <p class="card-text">Alin ro mga panggngaean nga pwede mahuyap <b>(Count Nouns)?</b> Alin ro pangngaean nga indi gid pwede mahuyap <b>(Mass Nouns)</b>?</p>
-              <p class="card-text">Alin ro mga panggngaean nga indi pwede mahuyap <b>(Mass Nouns)</b>?</p>
-              <p class="card-text">Alin ro mga panggngaean nga mahuyap <b>(Count Nouns)</b>?</p>
-              <p class="card-text">Ano ro mga panggngaean nga mahuyap <b>(Count nouns)</b>?</p>
-              <p class="card-text">Ano ro mga panggngaean nga indi pwede mahuyap <b>(Mass Nouns)</b>?</p>
-
-              <h5 class="card-text bold">Tandaan!</h5>
-
-              <div class="card-body card-style1">
               <br>
-              <p class="sm">Ro mga <ins>pangngaean nga mahuyap</ins> <b>(Count nouns)</b> hay mga pangngaean nga mahuyap it tigsambilog o binato bato.</p>
-              <p class="sm">Ro mga <ins>pangngaean nga indi mahuyap</ins> <b>(mass nouns)</b> hay mga pangngaean nga nga indi gid mahuyap.</p>
-              </div>
-              <br>
-              <footer class="text-center number">25</footer>
+                <p class="card-text bold">Ueubrahon 3</p>
+                <p class="card-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gaadto si nanay sa tindahan agud magbakae it mga butang nga kinahangean nana para sa anang ginaeaha.</p>
+                <p class="card-text">Butangan it tsek <b>✓</b> ro mga butang nga imong bue-on nga husto ro sukat ag ⭐ para sa mga butang nga imong bakeon gamit ro eain-eain panghuyap.</p>
+                <p class="card-text">Halimbawa: __________pinulbos nga paminta <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__________mga dahon it klabo</p>
+                <img src="assets/img/cloud.png" class="card-img-bottom" alt="...">
+                <p class="card-text bold">Ueubrahon 4</p>
+                <p class="card-text">Istudyuha ro imong mga sabat para sa Ueubrahon 4.
+                Kilaeaha ro mga pangngaean nga mahuyap ag ro mga pangngaean nga indi mahuyao suno sa mga sabat nga imong ginsueat.</p>
+              <footer class="text-center number">Pahina 25</footer>
             </div>
             <div class="navigation-buttons">
-                                <a href="page24.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page26.php"><button class="btn btn-primary float-right">Next</button></a>
+                                <a href="page24.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page26.php"><button class="btn btn-primary float-right">Masunod</button></a>
             </div><!-- End navigation-buttons -->
           </div>
         </div>

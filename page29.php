@@ -21,16 +21,26 @@
       <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
+              <br>
+              <h5 class="card-text bold">Tandaan!</h5>
+              <div class="card-body card-style1">
+              <br>
+              <p class="sm">Ro mga hitabo sa istorya hay may ginasundan nga hustong pagpasunod. Sa pagpasunod it mga hitabo sa istorya usuyon ro mga bisaea nga nagatao it sinyal kapareho it una, masunod, sa katapusan, bago ag pagkatapos, agud makabulig kimo ga makit-an ro hustoo nga pagpasunod. Ro iba pa nga mga paeatandaan sa teksto hay sarang man magamit depende sa imong nasayran ag pag-eobot agud makit-an ro husto nga pagpasunod.</p>
+              </div>
               <h5 class="card-title text-center">Obrahon Naton Raya!</h5>
-              <h5 class="card-text bold">Ueubrahon 6</h5>
-              <p class="card-text">Pasunura ro mga gin-obra ni Gina pagkatapos it anang klase. Numerohan ra suno sa anang pagkatabo.</p>
-              <p class="card-text">Ginsugid ni Gina kay Annie ro anang mayad nga gina-obra pagkatapos it anang klase sa hapon.</p>
-              <p class="card-text">__________Dayon, nag-agto imaw sa lababo agud buligan si nanay sa paghugas it mga pinggan.<br>__________Kat natapos eon nana it obra ro anang asaynment, nagpungko imaw sa sala kaibahan si nanay sa pagtan-aw it anang paboritong paguwa sa telebisyon.<br>__________Masunod, gin-buoe na ro anang asaynment notbuk ag gin-obra ro anang asaynment.<br>__________Sa katapusan, pagkatapos nga magharu imaw kay nanay na, nagderetso imaw sa anang kwarto agud magtueog.<br>_________Pag-abot eagi sa andang baeay, nagderitso imaw sa kusina agud magpamahaw.</p>
-              <footer class="text-center number">29</footer>
+              <h5 class="card-text bold">Ueubrahon 7</h5>
+              <p>Basaha ro kada bisaea ag isueat ro husto nga sabat sa sueod it tsart.</p>
+              <br>
+              <p class="smb"><b>Bisaea (Words)</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>Root word</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>suffix</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>Kahueugan (Meaning)</b></p>
+              <img width="100%;" class="bayluhi" src="assets/img/bayluhi.png" alt="...">
+              <img width="100%;" class="bisaea" src="assets/img/buhusan.png" alt="...">
+              <img width="100%;" class="bisaea" src="assets/img/kangayon.png" alt="...">
+              <img width="100%;" class="bisaea" src="assets/img/tindahan.png" alt="...">
+              <footer class="text-center number">Pahina 29</footer>
             </div>
             <div class="navigation-buttons">
-                                <a href="page28.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page30.php"><button class="btn btn-primary float-right">Next</button></a>
+                                <a href="page28.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page30.php"><button class="btn btn-primary float-right">Masunod</button></a>
             </div><!-- End navigation-buttons -->
           </div>
         </div>

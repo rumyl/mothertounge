@@ -35,11 +35,11 @@
                   <p class="card-text">&nbsp; &nbsp; &nbsp; "Owa una ro mga prutas ngaron kahapon," hambae ni Amiel.</p>
                   <p class="card-text">&nbsp; &nbsp; &nbsp; "Tyempo eon it pag-ani," hambae ni Tay Peping. "Ratong mga prutas hay gin- ani kahapon ku mga tawo sa andang eanas."</p>
                 </div>
-                <footer class="text-center page">11</footer><br>
+                <footer class="text-center page">Pahina 11</footer><br>
               </div>
                 <div class="navigation-buttons">
-                                <a href="page10.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page12.php"><button class="btn btn-primary float-right">Next</button></a>
+                                <a href="page10.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page12.php"><button class="btn btn-primary float-right">Masunod</button></a>
                 </div><!-- End navigation-buttons -->
             </div>
 

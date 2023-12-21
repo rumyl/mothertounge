@@ -41,11 +41,11 @@
                     <p class="card-text bold-color">Character Map</p>
                     <img src="assets/img/CM.png" class="card-img-bottom" alt="...">
                     <br><br>
-                    <footer class="text-center number">3</footer>
+                    <footer class="text-center number">Pahina 3</footer>
                     </div>
                     <div class="navigation-buttons">
-                            <a href="page2.php"><button class="btn btn-primary float-left">Previous</button></a>
-                            <a href="page4.php"><button class="btn btn-primary float-right">Next</button></a>
+                            <a href="page2.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                            <a href="page4.php"><button class="btn btn-primary float-right">Masunod</button></a>
                     </div><!-- End navigation-buttons -->
                 </div>
             </div>

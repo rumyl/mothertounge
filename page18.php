@@ -1,7 +1,30 @@
 <?php
-  require_once "includes/metaheader.php";
-  require_once "includes/header.php";
-  require_once "includes/sidebar.php";
+require_once "config/master.php";
+require_once "includes/metaheader.php";
+require_once "includes/header.php";
+require_once "includes/sidebar.php";
+
+$again = 1;
+
+if(isset($_GET['uman'])){
+
+  $again = 1;
+
+}else{
+
+  $student_id = $_SESSION["user_id"];
+  $ans_question = "Leksyon 2 - Ueobarahon 8";
+  
+  $check = "SELECT COUNT(*) as checker FROM tbl_answers WHERE ans_question ='$ans_question' AND student_id = '$student_id'";
+  $ans = $crud->getSingleRow($check);
+  if ($ans['checker'] == 0){
+      $again = 1;
+  }else{
+      $again = 0;
+  }
+
+}
+
 
 ?>
   <main id="main" class="main">
@@ -17,7 +40,7 @@
     </div><!-- End Page Title -->
     <section class="section dashboard">
       <div class="row">
-
+      <?php if($again == 1){ ?>
       <div class="col-lg-12">
               <div class="card">
                 <div class="card-body">
@@ -43,27 +66,60 @@
                     <div class="card">
                       <div class="card-style">
                         <p class="card-text">
+                         
+                          <form method="post" action ="answer.php" onsubmit="return confirm('I pasa mo eon gd ing sabat?')">
                           Ano ro problema?<br>
-                          _______________________________________<br>
-                          _______________________________________<br>
+                          1. <input type="text" name="l2_u8_01" style="width:90%;"  placeholder="Imong sabat"><br>
+                          2. <input type="text" name="l2_u8_02" style="width:90%;"  placeholder="Imong sabat"><br>
                           Ano ro solusyon?<br>
-                          _______________________________________<br>
-                          _______________________________________
+                          3. <input type="text" name="l2_u8_03" style="width:90%;"  placeholder="Imong sabat"><br>
+                          4. <input type="text" name="l2_u8_04" style="width:90%;"  placeholder="Imong sabat"><br>
+
+                          <div style="text-align:right">
+                          <br>
+                            <input type="submit" name="submit_l2_u8" value="Ipasa ing sabat" style="background:#4154f1;color:white;border-radius:10px;">
+                          </div>
+                          </form>
                         </p>
                       </div>
                     </div>
                   </div>
-                  <footer class="text-center page">18</footer>
+                  <footer class="text-center page">Pahina 18</footer>
                 </div>
                 <div class="navigation-buttons">
-                                <a href="page17.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page19.php"><button class="btn btn-primary float-right">Next</button></a>
+                                <a href="page17.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page19.php"><button class="btn btn-primary float-right">Masunod</button></a>
                 </div><!-- End navigation-buttons -->
               </div>
             </div>
           </div>
         </div>
+        <?php } else { ?>
 
+
+        <div class="col-lg-12">
+              <div class="card">
+                <div class="card-body">
+                <h5 class="card-title text-center">Hasabtan eon it <?php echo  $ans['checker'] ?> beses</h5>
+                  <h5 class="card-text bold text-center">Leksyon 2 - Ueubrahon 8</h5>
+                  <br><br>
+                    <div style="text-align:center;">
+                      <a href="page18.php?uman=1">
+                         <input type="submit" name="submit_l1_u3" value="Sabtan Uman ?" style="background:#4154f1;color:white;border-radius:10px;">
+                      </a>
+                    </div>
+                    <br><br>
+                  <footer class="text-center page">Pahina 18</footer>
+                </div>
+                <div class="navigation-buttons">
+                                <a href="page17.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page19.php"><button class="btn btn-primary float-right">Masunod</button></a>
+                </div><!-- End navigation-buttons -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
     </section>
 
   </main><!-- End #main -->

@@ -34,8 +34,8 @@
             </div><!-- End Card with an image -->
 
             <div class="navigation-buttons">
-                <button class="btn btn-primary float-left" style="cursor: not-allowed !important;opacity:0.5;">Previous</button>
-                <a href="page2.php"><button class="btn btn-primary float-right">Next</button></a>
+                <button class="btn btn-primary float-left" style="cursor: not-allowed !important;opacity:0.5;">Nakataliwan</button>
+                <a href="page2.php"><button class="btn btn-primary float-right">Masunod</button></a>
             </div><!-- End navigation-buttons -->
 
 

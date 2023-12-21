@@ -1,5 +1,5 @@
 <?php
-  require_once "includes/metaheader2.php";
+  require_once "includes/metaheader.php";
   require_once "includes/header.php";
   require_once "includes/sidebar2.php";
   require_once "config/master.php";
@@ -35,7 +35,7 @@ if(isset($_GET['action'])) {
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="admin.php">Home</a></li>
-          <li class="breadcrumb-item active">Students</li>
+          <li class="breadcrumb-item active">Mga Studyante</li>
         </ol>
       </nav>
     </div><!-- End Page Title -->
@@ -76,8 +76,8 @@ if(isset($_GET['action'])) {
                                 <tr>
                                     <td style="text-align:left;"><?php echo $record['fullname'] ?></td>
                                     <td style="text-align:center;">
-                                        <a href="score.php?user_id=<?php echo $user_id; ?>"><button style="background:#4154f1;color:white;border-radius:10px;">View Score</button></a>
-                                        <a href="admin.php?student_id=<?php echo $user_id; ?>&action=remove" onclick="return confirm('Are you sure you want to remove this student on this class?');"><button style="background:red;color:white;border-radius:10px;">Remove</button></a>
+                                        <a href="score.php?user_id=<?php echo $user_id; ?>"><button style="background:#4154f1;color:white;border-radius:10px;">Ueobrahon</button></a>
+                                        <a href="admin.php?student_id=<?php echo $user_id; ?>&action=remove" onclick="return confirm('Pae-son dayang studyante sa listahan?');"><button style="background:red;color:white;border-radius:10px;">Pae-son</button></a>
                                     </td>
                                     </tr>
                             <?php 

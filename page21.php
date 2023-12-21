@@ -7,7 +7,7 @@
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>LEKSYON 2</h1>
+      <h1>LEKSYON 3</h1>
       <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.php">Home</a></li>
@@ -19,49 +19,25 @@
       <div class="row">
 
       <div class="col-lg-12">
-              <div class="card">
-                <div class="card-body">
-                  <div class="card-title bold">POST ASSESSMENT<br>Exercise # 1</div>
-                  <p class="card-text">Kupyahon ag pun-an ro mga kahon it tama nga mga pangngaean. Dayon. magsueat it lima nga (5) ka pamisaea gamit ro mga pangaean sa idaeum.</p>
-                  <div class="col-lg-12">
-                    <div class="row">
-                      <div class="col-lg-12">
-                        <p class="card-text">
-                        1. sangka bote nga ketsup<br><br>
-                        2. itlog<br><br>
-                        3. sangkilo nga harina<br><br>
-                        4. karne<br><br>
-                        5. gulaman<br><br>
-                        6. pipino<br><br>
-                        7. sanka tasa nga eanggaw<br><br>
-                        8. mansanas<br><br>
-                        9. karot<br><br>
-                        10. kahil<br>
-                        </p>
-                      </div>
-                      <div class="col-lg-6">
-                        <img class="pangaean" src="assets/img/pangaeanbox.png" class="card-img-bottom" alt="...">
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                  <p class="card-text">Mga Pamisaea:</p>
-                  <p class="card-text">
-                    1. _________________________________________<br>
-                    2. _________________________________________<br>
-                    3. _________________________________________<br>
-                    4. _________________________________________<br>
-                    5. _________________________________________
-                  </p>
-                  <footer class="text-center page">21</footer>
-                </div>
-                <div class="navigation-buttons">
-                                <a href="page20.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page22.php"><button class="btn btn-primary float-right">Next</button></a>
-                </div><!-- End navigation-buttons -->
-              </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-center">Leksyon 3 Mga Butang nga akon Nasadyahan ag Mga Tawong Akong Nailaan</h5>
+              <h5 class="card-text bold-color">Basahon ag Tun-an!</h5>
+              <p class="card-text">Basaha ro istorya. Sabatan ro mga pangutana nga masunod.</p>
+              <p class="card-text">&nbsp; &nbsp; &nbsp; &nbsp;Nagsueod ro gutom nga ayam sa bukas nga geyt
+                Hakit-an na ro kaki nga mus-an nga may limang ka isiw nga nagakaka sa uegta. Manamit nga kaean-on ro mga isiw sa panan-aw it ayam. Mahinay imaw nga nagpaeapit kanda nga nagapakita ku anang mataeom nga ngipon. Hakita ku tag-ya ro ayam ag eagi-eagi nga nagbuoe it binus-ak nga kahoy. Hakit-an it ayam ro tag-iya ag nagdaeagan paeayo.</p>
+                <p class="card-text bold">Mga Pangutana.</p>
+                <p class="card-text"><b>1.</b> Ham-an it nagsueod ro ayam sa geyt?<br>
+                <b>2.</b> Ano ro gusto nga obrahon it ayam? Ham-an?.<br>
+                <b>3.</b> Paalin ginsalbar it tag-iya ro mus-an ag ro an nga mga isiw?</p>
+              <footer class="text-center number">Pahina 21</footer>
             </div>
+            <div class="navigation-buttons">
+                                <a href="page20.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page22.php"><button class="btn btn-primary float-right">Masunod</button></a>
+            </div><!-- End navigation-buttons -->
           </div>
+        </div>
     </section>
 
   </main><!-- End #main -->

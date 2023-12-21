@@ -169,7 +169,6 @@ class CRUD
         }
     }
     
-    
 
     public function calculateAge($birthdate) {
         $birthdate = new DateTime($birthdate);
@@ -191,6 +190,37 @@ class CRUD
         return $formattedDate;
     }
 
+
+    public function displayRelativeDate($date) {
+        $now = time();
+        $dateTimestamp = strtotime($date);
+        
+        $difference = $now - $dateTimestamp;
+        $secondsInMinute = 60;
+        $secondsInHour = 3600;
+        $secondsInDay = 86400;
+        $secondsInMonth = 2592000; // Average month length in seconds (30 days)
+        $secondsInYear = 31536000; // Average year length in seconds (365 days)
+    
+        if ($difference < $secondsInMinute) {
+            return 'Sadto Lang'; // Aklanon translation: "Sadto Lang"
+        } elseif ($difference < $secondsInHour) {
+            $minutes = floor($difference / $secondsInMinute);
+            return $minutes == 1 ? '1 minuto nagligad' : "$minutes minuto na ang nagligad"; // Aklanon translation: "$minutes ka minuto na ang nagligad"
+        } elseif ($difference < $secondsInDay) {
+            $hours = floor($difference / $secondsInHour);
+            return $hours == 1 ? '1  ka oras na ang nagligad' : "$hours  ka oras na ang nagligad"; // Aklanon translation: "$hours ka oras na ang nagligad"
+        } elseif ($difference < $secondsInMonth) {
+            $days = floor($difference / $secondsInDay);
+            return $days == 1 ? 'kahapon' : "$days  ka adlaw na ang nagligad"; // Aklanon translation: "$days ka adlaw na ang nagligad"
+        } elseif ($difference < $secondsInYear) {
+            $months = floor($difference / $secondsInMonth);
+            return $months == 1 ? '1 bulan nga nagligad' : "$months ka bulan na ang nagligad"; // Aklanon translation: "$months ka bulan na ang nagligad"
+        } else {
+            $years = floor($difference / $secondsInYear);
+            return $years == 1 ? '1 ka tuig nga nagligad' : "$years ka tuig na ang nagligad"; // Aklanon translation: "$years ka tuig na ang nagligad"
+        }
+    }
 
 }
 

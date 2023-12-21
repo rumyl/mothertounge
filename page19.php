@@ -20,26 +20,13 @@
 
       <div class="col-lg-12">
               <div class="card">
-                <div class="card-body">
-                  <div class="card-title bold">Tandaan</div>
+                <div class="card-body"><br>
+                  <p class="card-text">Paragrapo B</p>
+                  <p class="card-text">&nbsp;&nbsp;&nbsp; "Hara, daeha ro kuhit," hambae ni Jenny. Isaea, daywa, nahueog nga mga mangga. "Nakabuoe ako it daywa!" hambae ni Joyce.<br>
+                  &nbsp;&nbsp;&nbsp; "Tan-awa ratong mga pato sa sapa. Kanami gid a sanda tan-awon" hambae ni Jenny. Nagpaeapit pa gid imaw. Nahukas ro sanglingit ku anang sinelas ag inanod paeayo. "Ay abaw, ro akong sinelas!," singgit ni Jenny.<br>
+                  &nbsp;&nbsp;&nbsp; "Pabay-i lang ron," hambae ni Joyce. "May sang pares man ako nga sinelas sa bag", dugang na.
+                  </p>
                   <div class="col-lg-12">
-                    <div class="card">
-                      <div class="card-style">
-                        <p class="card-text">
-                          Ro hitabo (<b>Plot</b>) hay isaeang ka elemento it istorya<br>
-                          May problema ra ag anang solusyon.<br>
-                          Ro problema hay nagasugid hanungod sa sitwasyon nga ginapangatubang ku mga tawuhan sa istorya.<br>
-                          Ro solusyon hay nagasugid kon paalin ginpangatubang ag ginsulbar ku mga tawuhan sa istorya ro problema.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="card-title bold">Ueubrahon 8</div>
-                    <p class="card-text">Basaha ro matag-ud nga istorya istorya sa idaeum. Tinguha-i nga makit-an ro problema sa istorya ag ro anang solusyon.</p>
-                    <p class="card-text">Paragrapo A</p>
-                    <p class="card-text">&nbsp;&nbsp;&nbsp; Ginbisitahan nanday Jenny ag Joyce ro ay lolo nanda nga eanas.</p>
-                    <p class="card-text">&nbsp;&nbsp;&nbsp; "Naila gidd a ako sa lugar ngara," hambae ni Jenny. "Makangawa-ngawa ro mga kahoy!" hambae ni Joyce. "Abu-abu ra it bunga. Musyon sa akong paborito nga kahoy," dugang ni Joyce. "Kaabu kara ro anang bunga! Gusto ko nga magbuoe it pilang bilog ugaling, indi ko maabot."</p>
-                    <div class="col-lg-12">
                     <div class="card">
                       <div class="card-style">
                         <p class="card-text">
@@ -53,16 +40,33 @@
                       </div>
                     </div>
                   </div>
-                  <footer class="text-center page">19</footer>
+                  <div class="card-title bold">Ueubrahon 9</div>
+                  <p class="card-text">Mauno mo kakilaea ro imong kaugalingon? Pun-an ro masunod nga listahan it nakgakaigo nga impurmasyon. Sabtan it kumpleto nga pamisaea.</p>
+                  <div class="col-lg-12">
+                    <div class="card">
+                      <div class="card-style">
+                        <div class="card-title bold text-center">MALIYA AG KILAEAHON AKO!!!!!</div>
+                        <p class="card-text">
+                          Ano ro imong kumpleto nga pangaean?<br>
+                          Ano ro imong paborito nga kolor?<br>
+                          Pila kamo nga magmaeanghud?<br>
+                          Ano ro inyong mga paborito?<br>
+                          Ano ro inyong perming ginakaon sa pamahaw?<br>
+                          Ano ro inyong nailaan nga kan-on sa ilabas?<br>
+                          Ano ro imong pinakamanami nga pagkaon sa ihapon?<br>
+                          Padumdum: SABTAN IT KUMPLETO NGA PAMISAEA
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <footer class="text-center page">Pahina 19</footer>
                 </div>
                 <div class="navigation-buttons">
-                                <a href="page18.php"><button class="btn btn-primary float-left">Previous</button></a>
-                                <a href="page20.php"><button class="btn btn-primary float-right">Next</button></a>
+                                <a href="page18.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
+                                <a href="page20.php"><button class="btn btn-primary float-right">Masunod</button></a>
                 </div><!-- End navigation-buttons -->
               </div>
             </div>
-          </div>
-        </div>
 
     </section>
 
