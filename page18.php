@@ -57,7 +57,7 @@ if(isset($_GET['uman'])){
                       </div>
                     </div>
                   </div>
-                  <div class="card-title bold">Ueubrahon 8</div>
+                  <div class="card-title bold">Leksyon 2 - Ueubrahon 8</div>
                     <p class="card-text">Basaha ro matag-ud nga istorya istorya sa idaeum. Tinguha-i nga makit-an ro problema sa istorya ag ro anang solusyon.</p>
                     <p class="card-text">Paragrapo A</p>
                     <p class="card-text">&nbsp;&nbsp;&nbsp; Ginbisitahan nanday Jenny ag Joyce ro ay lolo nanda nga eanas.</p>

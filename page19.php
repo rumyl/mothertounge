@@ -21,25 +21,7 @@
       <div class="col-lg-12">
               <div class="card">
                 <div class="card-body"><br>
-                  <p class="card-text">Paragrapo B</p>
-                  <p class="card-text">&nbsp;&nbsp;&nbsp; "Hara, daeha ro kuhit," hambae ni Jenny. Isaea, daywa, nahueog nga mga mangga. "Nakabuoe ako it daywa!" hambae ni Joyce.<br>
-                  &nbsp;&nbsp;&nbsp; "Tan-awa ratong mga pato sa sapa. Kanami gid a sanda tan-awon" hambae ni Jenny. Nagpaeapit pa gid imaw. Nahukas ro sanglingit ku anang sinelas ag inanod paeayo. "Ay abaw, ro akong sinelas!," singgit ni Jenny.<br>
-                  &nbsp;&nbsp;&nbsp; "Pabay-i lang ron," hambae ni Joyce. "May sang pares man ako nga sinelas sa bag", dugang na.
-                  </p>
-                  <div class="col-lg-12">
-                    <div class="card">
-                      <div class="card-style">
-                        <p class="card-text">
-                          Ano ro problema?<br>
-                          _______________________________________<br>
-                          _______________________________________<br>
-                          Ano ro solusyon?<br>
-                          _______________________________________<br>
-                          _______________________________________
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+                
                   <div class="card-title bold">Ueubrahon 9</div>
                   <p class="card-text">Mauno mo kakilaea ro imong kaugalingon? Pun-an ro masunod nga listahan it nakgakaigo nga impurmasyon. Sabtan it kumpleto nga pamisaea.</p>
                   <div class="col-lg-12">

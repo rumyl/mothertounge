@@ -30,9 +30,6 @@
                 &nbsp; &nbsp; &nbsp; &nbsp; • Sa plaza, naghampang kami sa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padue-sam ag nagpalitrato sa rebulto &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ni Cardinal Sin.<br>
                 &nbsp; &nbsp; &nbsp; &nbsp; • Nag-adto ag nagbisita man kami sa &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kumbento it mga madre sa Pink &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sisters
                 </p>
-                <p class="card-text">
-                &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;___________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
-                </p>
                 </p>
               <footer class="text-center number">Pahina 23</footer>
             </div>

@@ -286,4 +286,32 @@ if(isset($_POST['submit_l2_u8'])){
 
 }
 
+
+
+
+// submit leksyon 3 Ueobrahon 1
+if(isset($_POST['submit_l3_u1'])){
+
+    $student_id = $_SESSION["user_id"];
+    $ans_question = "Leksyon 3 - Ueobarahon 1";
+
+    $score = 0;
+
+    $l3_u1_01   = $_POST['l3_u1_01']; 
+
+    $answer = "";
+
+    $dataToInsert = array(
+        'ans_answer'    => $l3_u1_01,
+        'ans_question'  => $ans_question,
+        'ans_score'     => $score,
+        'student_id'    => $student_id
+    );
+    $insertedId = $crud->create("tbl_answers", $dataToInsert);
+    if($insertedId){
+
+        echo "<meta http-equiv='refresh' content='0;url=page22.php'>";
+    }
+
+}
 ?>
