@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 08, 2023 at 06:37 AM
+-- Generation Time: Dec 27, 2023 at 03:41 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -29,10 +29,23 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `tbl_answers` (
   `ans_id` bigint(20) NOT NULL,
-  `ans_answer` varchar(100) NOT NULL,
+  `ans_answer` text NOT NULL,
   `ans_question` varchar(100) NOT NULL,
   `ans_score` int(100) NOT NULL,
+  `ans_date` datetime NOT NULL DEFAULT current_timestamp(),
   `student_id` bigint(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_audit`
+--
+
+CREATE TABLE `tbl_audit` (
+  `audit_id` bigint(20) NOT NULL,
+  `user_id` bigint(20) NOT NULL,
+  `login_time` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -43,18 +56,10 @@ CREATE TABLE `tbl_answers` (
 
 CREATE TABLE `tbl_users` (
   `user_id` bigint(20) NOT NULL,
-  `username` varchar(100) NOT NULL,
+  `student_no` varchar(100) NOT NULL,
   `fullname` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
   `usertype` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `tbl_users`
---
-
-INSERT INTO `tbl_users` (`user_id`, `username`, `fullname`, `password`, `usertype`) VALUES
-(1, 'rumyl', 'RUMYL JAMES', '123', 'Student');
 
 --
 -- Indexes for dumped tables
@@ -65,6 +70,12 @@ INSERT INTO `tbl_users` (`user_id`, `username`, `fullname`, `password`, `usertyp
 --
 ALTER TABLE `tbl_answers`
   ADD PRIMARY KEY (`ans_id`);
+
+--
+-- Indexes for table `tbl_audit`
+--
+ALTER TABLE `tbl_audit`
+  ADD PRIMARY KEY (`audit_id`);
 
 --
 -- Indexes for table `tbl_users`
@@ -83,10 +94,16 @@ ALTER TABLE `tbl_answers`
   MODIFY `ans_id` bigint(20) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `tbl_audit`
+--
+ALTER TABLE `tbl_audit`
+  MODIFY `audit_id` bigint(20) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `tbl_users`
 --
 ALTER TABLE `tbl_users`
-  MODIFY `user_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` bigint(20) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

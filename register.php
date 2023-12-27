@@ -8,21 +8,24 @@ $crud = new CRUD($conn);
 if(isset($_POST['register'])){
 
 
-    $username   = $_POST['username']; 
-    $fullname   = $_POST['fullname']; 
-    $password   = $_POST['p1']; 
-  
-  
-    $dataToInsert = array(
-        'username'    => $username,
-        'fullname'    => $fullname,
-        'password'    => $password,
-        'usertype'    => "Student",
-    );
-    $insertedId = $crud->create("tbl_users", $dataToInsert);
-    if($insertedId){
-      echo '<script>alert("Registration complete! You can now sign-in")</script>'; 
+
+    $isUnique = $crud->isValueUnique('tbl_users', 'student_no', $_POST['student_no']);
+    
+    if($isUnique){
+
+        $dataToInsert = array(
+        'fullname'      => $_POST['fullname'],
+        'student_no'    => $_POST['student_no'],
+        'usertype'      => "Student",
+        );
+
+        $insertedId = $crud->create("tbl_users", $dataToInsert);
+        echo '<script>alert("Registration complete! You can now sign-in")</script>'; 
+
+    }else{
+      echo '<script>alert("Student ID already registered!")</script>'; 
     }
+   
 }
 
 ?>
@@ -93,9 +96,7 @@ if(isset($_POST['register'])){
               <form method="post" action="">
               
               <input type="text" placeholder="Fullname" name="fullname" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
-              <input type="text" placeholder="Username" name="username" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
-              <input type="password" placeholder="Password" name="p1" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
-              <input type="password" placeholder="Confirm Password" name="p2" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
+              <input type="text" placeholder="Student ID Number" name="student_no" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
               <div style="text-align:left">
                 Have an account?  <a href="login.php">Sign-in</a>
               </div>

@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('Asia/Manila');
 class CRUD
 {
     private $conn;
@@ -185,7 +185,7 @@ class CRUD
         $timestamp = strtotime($date);
         
         // Format the date using strftime
-        $formattedDate = strftime('%B %d, %Y', $timestamp);
+        $formattedDate = strftime('%B %d, %Y -  %H:%M:%S', $timestamp);
     
         return $formattedDate;
     }
@@ -221,6 +221,16 @@ class CRUD
             return $years == 1 ? '1 ka tuig nga nagligad' : "$years ka tuig na ang nagligad"; // Aklanon translation: "$years ka tuig na ang nagligad"
         }
     }
+
+    public function auditLogin($studentId, $table)
+    {
+        $timestamp = date('Y-m-d H:i:s');
+        $sql = "INSERT INTO $table (user_id, login_time) VALUES ('$studentId', '$timestamp')";
+        $result = $this->conn->query($sql);
+
+        return $result;
+    }
+
 
 }
 

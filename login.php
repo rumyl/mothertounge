@@ -2,6 +2,7 @@
 session_start();
 require_once "config/master.php";
 
+
 $databaseObj = new Database();
 $conn = $databaseObj->getConnection();
 $crud = new CRUD($conn);
@@ -10,22 +11,23 @@ $crud = new CRUD($conn);
 if (isset($_SESSION["user_id"])) {
     // Redirect to the last visited page or default page for logged-in users
     $lastVisitedPage = isset($_SESSION["last_visited_page"]) ? $_SESSION["last_visited_page"] : "index.php";
+    $crud->auditLogin($user_id, 'tbl_audit');
     header("Location: $lastVisitedPage");
     exit();
 }
 
 // Check if the persistent login cookie exists
 if (isset($_COOKIE["remember_me"])) {
-    list($user_id, $username) = explode("|", $_COOKIE["remember_me"]);
+    list($user_id, $student_no) = explode("|", $_COOKIE["remember_me"]);
 
     // Validate the user credentials (you may want to improve this)
-    $sql = "SELECT * FROM tbl_users WHERE user_id = '$user_id' AND username = '$username'";
+    $sql = "SELECT * FROM tbl_users WHERE user_id = '$user_id' AND student_no = '$student_no'";
     $singleRow = $crud->getSingleRow($sql);
 
     if ($singleRow) {
         $_SESSION["user_id"] = $singleRow['user_id'];
         $_SESSION["fullname"] = $singleRow['fullname'];
-
+        $crud->auditLogin($user_id, 'tbl_audit');
         // Redirect to the last visited page or default page for regular users
         $lastVisitedPage = isset($_SESSION["last_visited_page"]) ? $_SESSION["last_visited_page"] : "index.php";
         header("Location: $lastVisitedPage");
@@ -35,10 +37,9 @@ if (isset($_COOKIE["remember_me"])) {
 
 // Process login if the login form is submitted
 if (isset($_POST['login'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $student_no = $_POST['student_no'];
 
-    if ($username == "admin" && $password == "admin") {
+    if ($student_no == "admin") {
         $_SESSION["user_id"] = "-1";
         $_SESSION["fullname"] = "Administrator";
 
@@ -50,15 +51,18 @@ if (isset($_POST['login'])) {
         header("Location: $lastVisitedPage");
         exit();
     } else {
-        $sql = "SELECT * FROM tbl_users WHERE username = '$username' AND password = '$password'";
+        $sql = "SELECT * FROM tbl_users WHERE student_no = '$student_no'";
         $singleRow = $crud->getSingleRow($sql);
 
         if ($singleRow) {
-            $_SESSION["user_id"] = $singleRow['user_id'];
-            $_SESSION["fullname"] = $singleRow['fullname'];
+            $_SESSION["user_id"]    = $singleRow['user_id'];
+            $_SESSION["student_no"] = $singleRow['student_no'];
+            $_SESSION["fullname"]   = $singleRow['fullname'];
+            $user_id = $singleRow['user_id'];
 
+            $crud->auditLogin($user_id, 'tbl_audit');
             // Set a persistent login cookie (you may want to improve this)
-            setcookie("remember_me", $singleRow['user_id'] . "|" . $username, time() + (86400 * 30), "/"); // 30 days
+            setcookie("remember_me", $singleRow['user_id'] . "|" . $student_no, time() + (86400 * 30), "/"); // 30 days
 
             // Redirect to the last visited page or default page for regular users
             $lastVisitedPage = isset($_SESSION["last_visited_page"]) ? $_SESSION["last_visited_page"] : "index.php";
@@ -128,16 +132,13 @@ if (isset($_POST['login'])) {
                 
               <form method="post" action="">
               
-              <input type="text" placeholder="Username" name="username" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
-              <input type="password" placeholder="Password" name="password" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
+              <input type="text" placeholder="Student ID Number" name="student_no" id="" autocomplete="off" required style="width:100%;margin:5px;border-radius:5px;"><br>
               <div style="text-align:left">
                 No account yet?  <a href="register.php">Sign-up</a>
               </div>
               <div style="text-align:right">
-                
                 <input type="submit" name="login" value="Sign-in" style="background:#4154f1;color:white;border-radius:10px;">
               </div>
-              
               </form>
             
             </div>

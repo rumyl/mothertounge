@@ -188,16 +188,17 @@
               <i class="bi bi-circle"></i><span>Pahina 31</span>
             </a>
           </li>
-          <li>
-            <a href="page32.php">
-              <i class="bi bi-circle"></i><span>Pahina 32</span>
-            </a>
-          </li>
         </ul>
         <li class="nav-item">
         <a class="nav-link " href="student_score.php">
           <i class="bi bi-grid"></i>
           <span>Scores</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+      <li class="nav-item">
+        <a class="nav-link " href="audit.php">
+          <i class="bi bi-grid"></i>
+          <span>Logs</span>
         </a>
       </li><!-- End Dashboard Nav -->
       </li>

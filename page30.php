@@ -36,41 +36,44 @@
               <div class="column">
                 <br>
                 <img src="assets/img/soup1.png" alt="..." style="width:100%">
-                <p>__________ nga sabaw</p>
+                <p><input type="text" name="l2_u1_01" style="width:25%;" placeholder="Imong sabat"> nga sabaw</p>
               </div>
 
                <div class="column">
                 <br>
                 <img src="assets/img/rock1.png" alt="..." style="width:100%">
-                <p>__________ nga baeas</p>
+                <p><input type="text" name="l2_u1_01" style="width:25%;" placeholder="Imong sabat"> nga baeas</p>
               </div>
 
                <div class="column">
                 <br>
                 <img src="assets/img/juice1.png" alt="..." style="width:100%">
-                <p>__________ nga juice</p>
+                <p><input type="text" name="l2_u1_01" style="width:25%;" placeholder="Imong sabat"> nga juice</p>
               </div>
 
                <div class="column">
                 <br>
                 <img src="assets/img/medicine1.png" alt="..." style="width:100%">
-                <p>__________ nga bueong</p>
+                <p><input type="text" name="l2_u1_01" style="width:25%;" placeholder="Imong sabat"> nga bueong</p>
               </div>
 
                <div class="column">
                 <br>
                 <img src="assets/img/jam1.png" alt="..." style="width:100%">
-                <p>__________ nga palaman</p>
+                <p><input type="text" name="l2_u1_01" style="width:25%;" placeholder="Imong sabat"> nga palaman</p>
               </div>
 
                <div class="column">
                 <br>
                 <img src="assets/img/rice1.png" alt="..." style="width:100%">
-                <p>__________ nga humay</p>
+                <p><input type="text" name="l2_u1_01" style="width:25%;" placeholder="Imong sabat"> nga humay</p>
               </div>
             </div>
             <footer class="text-center number">Pahina 30</footer><br>
           </div>
+          <div style="text-align:right">
+                    <input type="submit" name="submit_l2_u1" value="Ipasa ing sabat" style="background:#4154f1;color:white;border-radius:10px;">
+            </div>
           <div class="navigation-buttons">
                                 <a href="page29.php"><button class="btn btn-primary float-left">Nakataliwan</button></a>
                                 <a href="page31.php"><button class="btn btn-primary float-right">Masunod</button></a>
