@@ -64,36 +64,36 @@ if(isset($_GET['uman'])){
                       a. sa baryo &nbsp;<br>
                       b. sa kantina<br>
                       c. sa baybay <br>
-                      <input type="text" name="l2_u6_01" style="width:90%;"  placeholder="Imong sabat"><br>
+                      <input type="text" autocomplete="off" name="l2_u6_01" style="width:90%;"  placeholder="Imong sabat"><br>
                   <b>Hin-uno ra pwede nga matabo? __________</b><br>
                       a. Tyempo it Paskwa &nbsp;<br>
                       b. Pagbukas it klase<br>
                       c. bisan hin-uo <br>
-                      <input type="text" name="l2_u6_02" style="width:90%;"  placeholder="Imong sabat"><br>
+                      <input type="text" autocomplete="off" name="l2_u6_02" style="width:90%;"  placeholder="Imong sabat"><br>
                   </p>
                   <p class="card-text"><b>2. Istorya hanungod sa mga Engkantada (<i>Fairy Tale</i>)</b><br>
                   <b> Siin ra pwedeng matabo? __________</b><br>
                       a. eskuylahan &nbsp;<br>
                       b. palasyo<br>
                       c. zoo <br>
-                      <input type="text" name="l2_u6_03" style="width:90%;"  placeholder="Imong sabat"><br>
+                      <input type="text" autocomplete="off" name="l2_u6_03" style="width:90%;"  placeholder="Imong sabat"><br>
                   <b>Hin-uno ra pwede nga matabo? __________</b><br>
                       a. nakataliwan eon &nbsp;<br>
                       b. nagakatabo makaron<br>
                       c. matabo paeang <br>
-                      <input type="text" name="l2_u6_04" style="width:90%;"  placeholder="Imong sabat"><br>
+                      <input type="text" autocomplete="off" name="l2_u6_04" style="width:90%;"  placeholder="Imong sabat"><br>
                   </p>
                   <p class="card-text"><b>3. Paindis-indis o Pakontes it Kanta sa Eskuylahan</b><br>
                     <b>Siin ra pwedeng matabo? __________</b><br>
                       a. sa parti<br>
                       b. sa isaeang ka programa<br>
                       c. sa opisina<br>
-                      <input type="text" name="l2_u6_05" style="width:90%;"  placeholder="Imong sabat"><br>
+                      <input type="text" autocomplete="off" name="l2_u6_05" style="width:90%;"  placeholder="Imong sabat"><br>
                     <b>Hin-uno ra pwede nga matabo? __________</b><br>
                       a. alas-12 it tungang-gabii<br>
                       b. truadlaw<br>
                       c. pagkatapos it klase 
-                      <input type="text" name="l2_u6_06" style="width:90%;"  placeholder="Imong sabat"><br>
+                      <input type="text" autocomplete="off" name="l2_u6_06" style="width:90%;"  placeholder="Imong sabat"><br>
                   </p>
                     <div style="text-align:right">
                       <br>

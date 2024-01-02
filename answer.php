@@ -21,6 +21,18 @@ if(isset($_POST['submit_l1_u3'])){
     $l1_u3_04   = $_POST['l1_u3_04']; 
     $l1_u3_05   = $_POST['l1_u3_05']; 
 
+    if($l1_u3_01 == "MANGHOD"){
+        $score++;
+    }if( $l1_u3_02 == "ISDA"){
+        $score++;
+    }if( $l1_u3_03 == "KEYK"){
+        $score++;
+    }if( $l1_u3_04 == "SILHIG"){
+        $score++;
+    }if( $l1_u3_05 == "TUEON-AN"){
+        $score++;
+    }
+
     $answer = "";
     $answer .= "1. ".$l1_u3_01."<br/> 2. ".$l1_u3_02."<br/> 3. ".$l1_u3_03."<br/> 4. ".$l1_u3_04."<br/> 5. ".$l1_u3_05;
 
@@ -224,12 +236,27 @@ if(isset($_POST['submit_l2_u6'])){
     $ans_question = "Leksyon 2 - Ueobarahon 6";
     $score = 0;
 
-    $l2_u6_01   = $_POST['l2_u6_01']; 
-    $l2_u6_02   = $_POST['l2_u6_02']; 
-    $l2_u6_03   = $_POST['l2_u6_03']; 
-    $l2_u6_04   = $_POST['l2_u6_04']; 
-    $l2_u6_05   = $_POST['l2_u6_05']; 
-    $l2_u6_06   = $_POST['l2_u6_06']; 
+    $l2_u6_01   = strtoupper($_POST['l2_u6_01']); 
+    $l2_u6_02   = strtoupper($_POST['l2_u6_02']); 
+    $l2_u6_03   = strtoupper($_POST['l2_u6_03']); 
+    $l2_u6_04   = strtoupper($_POST['l2_u6_04']); 
+    $l2_u6_05   = strtoupper($_POST['l2_u6_05']); 
+    $l2_u6_06   = strtoupper($_POST['l2_u6_06']); 
+
+
+    if( $l2_u6_01 == 'a' ||  $l2_u6_01 == 'A'){
+        $score++;
+    }if( $l2_u6_02 == 'c' ||  $l2_u6_02 == 'C'){
+        $score++;
+    }if( $l2_u6_03 == 'a' ||  $l2_u6_03 == 'A'){
+        $score++;
+    }if( $l2_u6_04 == 'b' ||  $l2_u6_04 == 'B'){
+        $score++;
+    }if( $l2_u6_05 == 'b' ||  $l2_u6_05 == 'B'){
+        $score++;
+    }if( $l2_u6_06 == 'c' ||  $l2_u6_06 == 'C'){
+        $score++;
+    }
 
     $answer = "";
     $answer .= "1. ".$l2_u6_01."<br/> 2. ".$l2_u6_02."<br/> 3. ".$l2_u6_03."<br/> 4. ".$l2_u6_04."<br/> 5. ".$l2_u6_05."<br/> 6. ".$l2_u6_06;
@@ -239,7 +266,7 @@ if(isset($_POST['submit_l2_u6'])){
     $dataToInsert = array(
         'ans_answer'    => $answer,
         'ans_question'  => $ans_question,
-        'ans_score'     => 0,
+        'ans_score'     => $score,
         'student_id'    => $student_id,
     );
     $insertedId = $crud->create("tbl_answers", $dataToInsert);
