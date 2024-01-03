@@ -15,11 +15,11 @@ if(isset($_POST['submit_l1_u3'])){
 
     $score = 0;
 
-    $l1_u3_01   = $_POST['l1_u3_01']; 
-    $l1_u3_02   = $_POST['l1_u3_02']; 
-    $l1_u3_03   = $_POST['l1_u3_03']; 
-    $l1_u3_04   = $_POST['l1_u3_04']; 
-    $l1_u3_05   = $_POST['l1_u3_05']; 
+    $l1_u3_01   = strtoupper($_POST['l1_u3_01']); 
+    $l1_u3_02   = strtoupper($_POST['l1_u3_02']); 
+    $l1_u3_03   = strtoupper($_POST['l1_u3_03']); 
+    $l1_u3_04   = strtoupper($_POST['l1_u3_04']); 
+    $l1_u3_05   = strtoupper($_POST['l1_u3_05']); 
 
     if($l1_u3_01 == "MANGHOD"){
         $score++;
