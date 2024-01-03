@@ -87,8 +87,7 @@ if(isset($_POST['register'])){
             <div class="card-body" style="text-align:center;">
             <img src="assets/img/yunit1.png" style="width:200px;margin-top:20px;" class="card-img-bottom" alt="...">
                  <h5 class="card-title" >
-                        Mother Tongue - Based<br>
-                        Multilingual Education<br><br>
+                        Digitizing Mother Tongue Books for Grade 3 Students: Enhancing Multilingual Education at Kalibo Pilot Elementary School<br><br>
                         Sign-up
                 </h5>
 

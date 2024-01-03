@@ -69,7 +69,7 @@ if (isset($_POST['login'])) {
             header("Location: $lastVisitedPage");
             exit();
         } else {
-            echo '<script>alert("Incorrect Password!")</script>';
+            echo '<script>alert("Invalid Student Number!")</script>';
         }
     }
 }
@@ -82,7 +82,7 @@ if (isset($_POST['login'])) {
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Home - Mother Tongue - Based Multilingual Education</title>
+  <title>Digitizing Mother Tongue Books for Grade 3 Students: Enhancing Multilingual Education at Kalibo Pilot Elementary School</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -124,8 +124,7 @@ if (isset($_POST['login'])) {
             <div class="card-body" style="text-align:center;">
             <img src="assets/img/yunit1.png" style="width:200px;margin-top:20px;" class="card-img-bottom" alt="...">
                  <h5 class="card-title" >
-                        Mother Tongue - Based<br>
-                        Multilingual Education<br><br>
+                         Digitizing Mother Tongue Books for Grade 3 Students: Enhancing Multilingual Education at Kalibo Pilot Elementary School<br><br>
                         Sign-in
                 </h5>
 
